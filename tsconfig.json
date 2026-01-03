@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    // 1. Defina as pastas de entrada e saída (Importante para o build)
+    //"rootDir": "./src",
+    "outDir": "./build", // Ou "./dist", como preferir
+
+    // 2. Configuração de Módulos (Isso você já tinha, está ótimo)
+    "module": "nodenext",
+    "target": "esnext",
+    "moduleResolution": "nodenext",
+    
+    // 3. Tipagem do Node (Essencial para não dar erro em console.log ou process.env)
+    // Você precisa descomentar isso:
+    "lib": ["esnext"],
+    "types": ["node"],
+
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Opções estritas
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "verbatimModuleSyntax": true,
+    
+    // Configurações extras
+    "esModuleInterop": true, // Ajuda com bibliotecas mais antigas
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
